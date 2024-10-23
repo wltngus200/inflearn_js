@@ -9,7 +9,32 @@
             <div class="date" id="date">2월 10일 금요일</div>
             <div class="clock" id="clock">15:03</div>
         </div>
-        <script src="./src/23_dom_api.js"></script> <!-- java scriot 코드를 작성할 index.js를 연결 -->
+
+        <hr>
+            
+        <div>
+            <input id="input" type="text">
+            <select id="color">
+              <option>노랑</option>  
+              <option>초록</option>  
+              <option>파랑</option>  
+              <option>보라</option>  
+            </select>
+            <div id="result">노랑</div>
+        </div>
+
+        <hr>
+
+        <div class="main">
+            <input id="id" type="text">
+            <input id="pwd" type="password">
+            <button id="login-btn">로그인</button>
+            <div id="userId"></div>
+            <div id="userPwd"></div>
+        </div>
+
+        <!-- body에 어디에 작성해도 상관 없으나 가장 아래 작성하는게 HTML을 다 로드 한 후 실행함 -->
+        <script src="./src/27_localStorage.js"></script> <!-- java scriot 코드를 작성할 index.js를 연결 -->
         <!-- vscode를 사용하기 쉽게 하는 플러그인 설치 
                 1. 코드 자동 줄 맞춤 : prettier 
                 설정 > editer.format on save를 체크
@@ -17,5 +42,6 @@
                        ctrl + s를 통해 정렬 
                 2. live server : 작성한 코드를 컴퓨터에서 실행 실시간으로 확인 가능
                     우측 하단에 go live 버튼을 누르면 브라우저에서 볼 수 있음 -->
+                    <!-- 127.0.0.1:5500 로컬호스트 주소:포트번호(집:문) -->
     </body>
 </html>
