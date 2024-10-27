@@ -1,0 +1,9 @@
+{
+    "name":"project",
+    "description":"Made by Suhyeon",
+    "version":"1.0",
+    "mainfest_version":3,
+    "permissions":["storage"],
+    "chrome_url_overrides":{"project":"index.html"},
+    "host_permissions":["<all_urls>"]
+}

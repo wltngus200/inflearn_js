@@ -1,0 +1,33 @@
+/* position : 웹 문서 상에 요소를 배치하는 방법을 지정 */
+/* 속성값 : static, relative, absolute, fixed, sticky */
+/* 위치 결정 : top, right, bottom, left */
+
+div{width:200px; height:70px;}
+.yellow{background-color: yellow;}
+.blue{background-color: blue;}
+.green{background-color: green;}
+
+/* 모든 웹 요소는 기본적으로 static */
+
+/* relative : static일 때 위치를 기반으로 위치를 수정할 시 해당 속성 방향으로 이동
+                (양수는 안쪽, 음수는 바깥쪽~right 50px=left -50px~) */
+/* .yellow{position:relative; right:50px;}
+.blue{position:relative; left:50px;}
+.green{position:relative; bottom:50px;} */
+
+/* absolute : 포지션 값이 static이 아닌 부모를 기준으로 움직임 */
+/* .parent{background:silver; width:400px; height: 400px;} */
+/* parent가 relative일 경우 : 부모가 차지하는 영역 내에서 기준점을 잡고 이동 */
+/* .parent{position:relative;} */
+/* parent가 static일 경우 : body 태그를 기준으로 이동 */
+/* .yellow{position:absolute; right:50px;}
+.blue{position:absolute; left:50px;}
+.green{position:absolute; bottom:50px;} */
+
+/* fixed & sticky : 스크롤 시 요소를 고정
+    - fixed : 스크롤을 내려도 브라우저 화면 내에 위치 고정 
+    - sticky : 부모요소의 마지막에 도달하면 더이상 진행 X */
+body{height:1000px;}
+.parent{height: 300px; width:300px; background-color: gray;}
+.yellow{position:sticky; top:0;}
+.blue{position:fixed; top:50px; left:50px;}

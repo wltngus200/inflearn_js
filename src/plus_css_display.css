@@ -1,0 +1,31 @@
+/* display: html요소를 어떻게 보여줄지 결정하는 속성 */
+/* 속성값 : none, block, inline, inline-block, grid, flex */
+.block{display:block;}
+div[class$=setting]{display:block; width:300px; height: 200px; background-color: silver;}
+
+/* block : 기본적으로 가로길이 100% 한 줄에 하나 */
+.block{display:block;}
+/* inline : 한 줄에 여러 개의 요소, 가로세로 길이는 요소 안의 contents의 내용에 따라 결정 */
+.inline{display:inline;}
+/* inline-block : 양쪽의 특성을 가짐 */
+.inline-block{display:inline-block; width:300px;}
+.inline-block2{display:inline-block;}
+/* none : 요소가 존재하지 않는 것처럼 사라짐 */
+.none{display:none;}
+/* grid : 한 단계 아래의 자식 요소는 모두 grid-item이 됨 */
+.grid-wrapper{display:grid; 
+    /* grid-template-columns:80px 80px 80px; 열의 크기와 간격 조절 */
+    /* grid-template-columns:2fr 1fr 1fr; 사용 가능한 공간을 일정 비율로 나타냄 */
+    /* grid-template-rows: 35px 45px 55px 65px 75px; 행의 크기 설정 */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+}
+.grid-wrapper div{background:skyblue; border:2px rgb(26, 2, 161) solid;}
+/* flex : 일렬로 배치, 방향, 크기, 정렬 조정에 유용 */
+.flex-wrapper{border:1px solid black; display:flex; height:100px;
+    /* justify-content : flex-start, flex-end, center, space-around, space-between, space-evenly */
+    justify-content: space-evenly;
+    /* start, center, end, stretch */
+    align-items: center;
+}
+.flex-wrapper div{background:skyblue; border:2px rgb(26, 2, 161) solid; width:50px; height:50px;}
